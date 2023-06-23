@@ -1,0 +1,127 @@
+/* style.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  body {
+    background-color: #f1f1f1;
+}
+
+#weather-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    
+  }
+  
+  #city-image-container {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  #city-image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+
+  }
+  
+  #weather-data-container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: -300px;
+    
+  }
+  
+  #search-container {
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  #city-input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  #search-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+
+  
+/* city-name, weather-description ve temperature idlerinin sayfayı ortalamasını istiyorum*/
+  
+  #city-name {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    
+  }
+  
+  #weather-description,
+  #temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: white;
+  }
+
+    #weather-description {
+        text-transform: capitalize;
+    }
+
+    #temperature {
+        font-size: 48px;
+    }
+
+    #weather-icon {
+        width: 100px;
+        height: 100px;
+        margin: 20px auto;
+    }
+
+    #weather-icon img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #weather-data-container .weather-info {
+        width: 33.33%;
+        height: 100%;
+        display: inline-block;
+        vertical-align: top;
+    }
